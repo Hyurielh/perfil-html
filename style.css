@@ -1,60 +1,113 @@
-/* Fondo general y fuente */
-body {
-    background-color: #f3f4f6;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Contenedor centrado */
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* Título principal con ID */
-  #nombre {
-    font-size: 2em;
-    color: #111827;
-  }
-  
-  /* Imagen de perfil con clase */
-  .avatar {
-    border-radius: 50%;
-    box-shadow: 2px 2px 8px #d1d5db;
-    border: 3px solid #3b82f6;
-    width: 200px;
-    height: auto;
-    margin: 20px 0;
-  }
-  
-  /* Estilo para listas */
-  .intereses ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .intereses li {
-    margin: 5px 0;
-  }
-  
-  /* Secciones con espacio */
-  section {
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  /* Enlace a GitHub con clase */
-  .enlace-github {
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #3b82f6;
-  }
-  
-  .enlace-github:hover {
-    text-decoration: underline;
-    color: #2563eb;
-  }
-  
+/* ==== RESET MODERNO 2025 - NO INVASIVO ==== */
+
+/* Modelo de caja universal */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Elimina márgenes y paddings predeterminados */
+body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Elimina decoración por defecto */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Quita viñetas de listas */
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Evita que imágenes se salgan del contenedor */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Tipografía coherente en formularios */
+input, button, textarea, select {
+  font: inherit;
+}
+/* ==== ESTILOS PERSONALIZADOS ==== */
+
+/* Clase para aplicar tu tema visual general */
+.theme {
+  background-color: #f3f4f6;
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor centrado */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título */
+#nombre-usuario {
+  font-size: 2em;
+  color: #111827;
+}
+
+/* Imagen */
+.avatar {
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px #d1d5db;
+  border: 3px solid #3b82f6;
+  width: 200px;
+  height: auto;
+  margin: 20px 0;
+}
+
+.github-texto {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Lista de intereses */
+.intereses li {
+  margin: 5px 0;
+}
+
+/* Enlace GitHub */
+.enlace-github {
+  font-size: 1.5em;
+  color: #3b82f6;
+
+}
+
+.enlace-github:hover {
+  text-decoration: underline;
+  color: #2563eb;
+}
+
+.formulario {
+  margin-top: 10px;
+}
+
+.formulario input, .formulario textarea, .formulario button, .formulario label{
+  margin: 10px;
+}
+.formulario label{
+  font-size: 1.5em;
+}
+.formulario input, .formulario textarea{
+  padding: 10px;
+}
+.boton-enviar{
+background-color: #3b82f6;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+}
+.boton-enviar:hover{
+  background-color: #2563eb;
+}

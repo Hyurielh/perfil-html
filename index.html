@@ -7,13 +7,13 @@
   <link rel="stylesheet" href="style.css">
   <title>Mi Perfil HTML</title>
 </head>
-<body>
+<body class="theme">
   <!-- Contenedor principal -->
   <main class="container">
     
     <!-- Encabezado con id -->
     <header>
-      <h1 id="nombre">Harvin Yuriel Cerda Hernández</h1>
+      <h1 id="nombre-usuario">Harvin Yuriel Cerda Hernández</h1>
       <p>Hola, soy programador. Me gusta mucho aprender y mejorar mis habilidades.</p>
     </header>
 
@@ -39,9 +39,23 @@
 
     <!-- Enlace a GitHub -->
     <section class="github">
-      <h2>GitHub</h2>
+      <h2 class="github-texto">GitHub</h2>
       <a href="https://github.com/hyurielh" target="_blank" class="enlace-github">Hyurielh</a>
     </section>
+
+    <form class="formulario" action="#" method="post">
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre"><br><br>
+    
+      <label for="correo">Correo electrónico:</label><br>
+      <input type="email" id="correo" name="correo"><br><br>
+    
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje"></textarea><br><br>
+    
+      <button class="boton-enviar" type="submit">Enviar</button>
+
+    </form>
     
   </main>
 </body>
